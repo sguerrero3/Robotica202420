@@ -1,0 +1,167 @@
+[0.000000] (-) TimerEvent: {}
+[0.000389] (proyecto1) JobQueued: {'identifier': 'proyecto1', 'dependencies': OrderedDict()}
+[0.000663] (proyecto1) JobStarted: {'identifier': 'proyecto1'}
+[0.099632] (-) TimerEvent: {}
+[0.199931] (-) TimerEvent: {}
+[0.300835] (-) TimerEvent: {}
+[0.401292] (-) TimerEvent: {}
+[0.501710] (-) TimerEvent: {}
+[0.602009] (-) TimerEvent: {}
+[0.702354] (-) TimerEvent: {}
+[0.802628] (-) TimerEvent: {}
+[0.902943] (-) TimerEvent: {}
+[1.003187] (-) TimerEvent: {}
+[1.103490] (-) TimerEvent: {}
+[1.203813] (-) TimerEvent: {}
+[1.304246] (-) TimerEvent: {}
+[1.404600] (-) TimerEvent: {}
+[1.504878] (-) TimerEvent: {}
+[1.605184] (-) TimerEvent: {}
+[1.705449] (-) TimerEvent: {}
+[1.805801] (-) TimerEvent: {}
+[1.906080] (-) TimerEvent: {}
+[2.006387] (-) TimerEvent: {}
+[2.106661] (-) TimerEvent: {}
+[2.206956] (-) TimerEvent: {}
+[2.307205] (-) TimerEvent: {}
+[2.407532] (-) TimerEvent: {}
+[2.507925] (-) TimerEvent: {}
+[2.608420] (-) TimerEvent: {}
+[2.708797] (-) TimerEvent: {}
+[2.809089] (-) TimerEvent: {}
+[2.909434] (-) TimerEvent: {}
+[3.009717] (-) TimerEvent: {}
+[3.109977] (-) TimerEvent: {}
+[3.210201] (-) TimerEvent: {}
+[3.310440] (-) TimerEvent: {}
+[3.410859] (-) TimerEvent: {}
+[3.511129] (-) TimerEvent: {}
+[3.611414] (-) TimerEvent: {}
+[3.711740] (-) TimerEvent: {}
+[3.811994] (-) TimerEvent: {}
+[3.912270] (-) TimerEvent: {}
+[4.012545] (-) TimerEvent: {}
+[4.112842] (-) TimerEvent: {}
+[4.213128] (-) TimerEvent: {}
+[4.313402] (-) TimerEvent: {}
+[4.413885] (-) TimerEvent: {}
+[4.514310] (-) TimerEvent: {}
+[4.614543] (-) TimerEvent: {}
+[4.714826] (-) TimerEvent: {}
+[4.815086] (-) TimerEvent: {}
+[4.915468] (-) TimerEvent: {}
+[5.015827] (-) TimerEvent: {}
+[5.116212] (-) TimerEvent: {}
+[5.216578] (-) TimerEvent: {}
+[5.316932] (-) TimerEvent: {}
+[5.417387] (-) TimerEvent: {}
+[5.517670] (-) TimerEvent: {}
+[5.618003] (-) TimerEvent: {}
+[5.718334] (-) TimerEvent: {}
+[5.818647] (-) TimerEvent: {}
+[5.918951] (-) TimerEvent: {}
+[6.019195] (-) TimerEvent: {}
+[6.119419] (-) TimerEvent: {}
+[6.219828] (-) TimerEvent: {}
+[6.320201] (-) TimerEvent: {}
+[6.420591] (-) TimerEvent: {}
+[6.520884] (-) TimerEvent: {}
+[6.621237] (-) TimerEvent: {}
+[6.721526] (-) TimerEvent: {}
+[6.821884] (-) TimerEvent: {}
+[6.922252] (-) TimerEvent: {}
+[7.022501] (-) TimerEvent: {}
+[7.123030] (-) TimerEvent: {}
+[7.223350] (-) TimerEvent: {}
+[7.323706] (-) TimerEvent: {}
+[7.423999] (-) TimerEvent: {}
+[7.524330] (-) TimerEvent: {}
+[7.624655] (-) TimerEvent: {}
+[7.725014] (-) TimerEvent: {}
+[7.825336] (-) TimerEvent: {}
+[7.925684] (-) TimerEvent: {}
+[8.026014] (-) TimerEvent: {}
+[8.126340] (-) TimerEvent: {}
+[8.226724] (-) TimerEvent: {}
+[8.327124] (-) TimerEvent: {}
+[8.427497] (-) TimerEvent: {}
+[8.527801] (-) TimerEvent: {}
+[8.628043] (-) TimerEvent: {}
+[8.728436] (-) TimerEvent: {}
+[8.828747] (-) TimerEvent: {}
+[8.929003] (-) TimerEvent: {}
+[9.029299] (-) TimerEvent: {}
+[9.129639] (-) TimerEvent: {}
+[9.229885] (-) TimerEvent: {}
+[9.330190] (-) TimerEvent: {}
+[9.430503] (-) TimerEvent: {}
+[9.530815] (-) TimerEvent: {}
+[9.631192] (-) TimerEvent: {}
+[9.731641] (-) TimerEvent: {}
+[9.832061] (-) TimerEvent: {}
+[9.932414] (-) TimerEvent: {}
+[10.032777] (-) TimerEvent: {}
+[10.133166] (-) TimerEvent: {}
+[10.233410] (-) TimerEvent: {}
+[10.333712] (-) TimerEvent: {}
+[10.433955] (-) TimerEvent: {}
+[10.664697] (-) TimerEvent: {}
+[10.765175] (-) TimerEvent: {}
+[10.865484] (-) TimerEvent: {}
+[10.965777] (-) TimerEvent: {}
+[11.066061] (-) TimerEvent: {}
+[11.166362] (-) TimerEvent: {}
+[11.266645] (-) TimerEvent: {}
+[11.366944] (-) TimerEvent: {}
+[11.467208] (-) TimerEvent: {}
+[11.567467] (-) TimerEvent: {}
+[11.667784] (-) TimerEvent: {}
+[11.768210] (-) TimerEvent: {}
+[11.868625] (-) TimerEvent: {}
+[11.969023] (-) TimerEvent: {}
+[12.069299] (-) TimerEvent: {}
+[12.169728] (-) TimerEvent: {}
+[12.249187] (proyecto1) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/proyecto1', 'build', '--build-base', '/home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/build', 'install', '--record', '/home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/server/Documents/Proyecto 1/proyecto_ws/src/proyecto1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/server/Documents/Proyecto 1/gazebo/models', 'USER': 'server', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/server', 'OLDPWD': '/home/server', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2704', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'server', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'server', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/server:@/tmp/.ICE-unix/2501,unix/server:/tmp/.ICE-unix/2501', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9aff7770_ee2a_4417_93a0_0e7525e62f06', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.107', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.269913] (-) TimerEvent: {}
+[12.370169] (-) TimerEvent: {}
+[12.470425] (-) TimerEvent: {}
+[12.570697] (-) TimerEvent: {}
+[12.670969] (-) TimerEvent: {}
+[12.748224] (proyecto1) StdoutLine: {'line': b'running egg_info\n'}
+[12.771058] (-) TimerEvent: {}
+[12.779965] (proyecto1) StdoutLine: {'line': b'writing ../../build/proyecto1/proyecto1.egg-info/PKG-INFO\n'}
+[12.830319] (proyecto1) StdoutLine: {'line': b'writing dependency_links to ../../build/proyecto1/proyecto1.egg-info/dependency_links.txt\n'}
+[12.830795] (proyecto1) StdoutLine: {'line': b'writing entry points to ../../build/proyecto1/proyecto1.egg-info/entry_points.txt\n'}
+[12.871388] (-) TimerEvent: {}
+[12.879336] (proyecto1) StdoutLine: {'line': b'writing requirements to ../../build/proyecto1/proyecto1.egg-info/requires.txt\n'}
+[12.879667] (proyecto1) StdoutLine: {'line': b'writing top-level names to ../../build/proyecto1/proyecto1.egg-info/top_level.txt\n'}
+[12.940248] (proyecto1) StdoutLine: {'line': b"reading manifest file '../../build/proyecto1/proyecto1.egg-info/SOURCES.txt'\n"}
+[12.971495] (-) TimerEvent: {}
+[12.980920] (proyecto1) StdoutLine: {'line': b"writing manifest file '../../build/proyecto1/proyecto1.egg-info/SOURCES.txt'\n"}
+[12.981227] (proyecto1) StdoutLine: {'line': b'running build\n'}
+[12.981422] (proyecto1) StdoutLine: {'line': b'running build_py\n'}
+[13.026306] (proyecto1) StdoutLine: {'line': b'copying proyecto1/path_follow.py -> /home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/build/lib/proyecto1\n'}
+[13.027001] (proyecto1) StdoutLine: {'line': b'running install\n'}
+[13.039556] (proyecto1) StdoutLine: {'line': b'running install_lib\n'}
+[13.070395] (proyecto1) StdoutLine: {'line': b'copying /home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/build/lib/proyecto1/path_follow.py -> /home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1\n'}
+[13.071560] (-) TimerEvent: {}
+[13.121246] (proyecto1) StdoutLine: {'line': b'byte-compiling /home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1/path_follow.py to path_follow.cpython-312.pyc\n'}
+[13.146013] (proyecto1) StdoutLine: {'line': b'running install_data\n'}
+[13.163901] (proyecto1) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.171720] (-) TimerEvent: {}
+[13.198122] (proyecto1) StdoutLine: {'line': b"removing '/home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[13.226824] (proyecto1) StdoutLine: {'line': b'Copying ../../build/proyecto1/proyecto1.egg-info to /home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1-0.0.0-py3.12.egg-info\n'}
+[13.260262] (proyecto1) StdoutLine: {'line': b'running install_scripts\n'}
+[13.271776] (-) TimerEvent: {}
+[13.372108] (-) TimerEvent: {}
+[13.472550] (-) TimerEvent: {}
+[13.537462] (proyecto1) StdoutLine: {'line': b'Installing pathfollow script to /home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/proyecto1\n'}
+[13.537788] (proyecto1) StdoutLine: {'line': b"writing list of installed files to '/home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/install.log'\n"}
+[13.572719] (-) TimerEvent: {}
+[13.588997] (proyecto1) CommandEnded: {'returncode': 0}
+[13.672804] (-) TimerEvent: {}
+[13.773170] (-) TimerEvent: {}
+[13.873440] (-) TimerEvent: {}
+[13.973851] (-) TimerEvent: {}
+[14.046048] (proyecto1) JobEnded: {'identifier': 'proyecto1', 'rc': 0}
+[14.047429] (-) EventReactorShutdown: {}

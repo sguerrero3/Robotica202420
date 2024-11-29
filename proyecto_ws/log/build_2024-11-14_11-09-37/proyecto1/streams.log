@@ -1,0 +1,32 @@
+[0.850s] Invoking command in '/home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/src/proyecto1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/proyecto1 build --build-base /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/build install --record /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/install.log --single-version-externally-managed install_data
+[1.086s] running egg_info
+[1.087s] creating ../../build/proyecto1/proyecto1.egg-info
+[1.107s] writing ../../build/proyecto1/proyecto1.egg-info/PKG-INFO
+[1.108s] writing dependency_links to ../../build/proyecto1/proyecto1.egg-info/dependency_links.txt
+[1.108s] writing requirements to ../../build/proyecto1/proyecto1.egg-info/requires.txt
+[1.108s] writing top-level names to ../../build/proyecto1/proyecto1.egg-info/top_level.txt
+[1.108s] writing manifest file '../../build/proyecto1/proyecto1.egg-info/SOURCES.txt'
+[1.148s] reading manifest file '../../build/proyecto1/proyecto1.egg-info/SOURCES.txt'
+[1.149s] writing manifest file '../../build/proyecto1/proyecto1.egg-info/SOURCES.txt'
+[1.149s] running build
+[1.149s] running build_py
+[1.149s] creating /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/build
+[1.149s] creating /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/build/lib
+[1.149s] creating /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/build/lib/proyecto1
+[1.149s] copying proyecto1/__init__.py -> /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/build/lib/proyecto1
+[1.150s] running install
+[1.155s] running install_lib
+[1.174s] creating /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1
+[1.174s] copying /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/build/lib/proyecto1/__init__.py -> /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1
+[1.174s] byte-compiling /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1/__init__.py to __init__.cpython-312.pyc
+[1.174s] running install_data
+[1.175s] creating /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/share/ament_index
+[1.175s] creating /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/share/ament_index/resource_index
+[1.175s] creating /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/share/ament_index/resource_index/packages
+[1.175s] copying resource/proyecto1 -> /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/share/ament_index/resource_index/packages
+[1.175s] copying package.xml -> /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/share/proyecto1
+[1.175s] running install_egg_info
+[1.194s] Copying ../../build/proyecto1/proyecto1.egg-info to /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1-0.0.0-py3.12.egg-info
+[1.195s] running install_scripts
+[1.314s] writing list of installed files to '/home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/install.log'
+[1.335s] Invoked command in '/home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/src/proyecto1' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/proyecto1 build --build-base /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/build install --record /home/sebastian/Documents/Robotica/Proyecto 1/proyecto_ws/build/proyecto1/install.log --single-version-externally-managed install_data

@@ -1,0 +1,24 @@
+[12.249s] Invoking command in '/home/server/Documents/Proyecto 1/proyecto_ws/src/proyecto1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/proyecto1 build --build-base /home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/build install --record /home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/install.log --single-version-externally-managed install_data
+[12.748s] running egg_info
+[12.779s] writing ../../build/proyecto1/proyecto1.egg-info/PKG-INFO
+[12.830s] writing dependency_links to ../../build/proyecto1/proyecto1.egg-info/dependency_links.txt
+[12.830s] writing entry points to ../../build/proyecto1/proyecto1.egg-info/entry_points.txt
+[12.879s] writing requirements to ../../build/proyecto1/proyecto1.egg-info/requires.txt
+[12.879s] writing top-level names to ../../build/proyecto1/proyecto1.egg-info/top_level.txt
+[12.940s] reading manifest file '../../build/proyecto1/proyecto1.egg-info/SOURCES.txt'
+[12.980s] writing manifest file '../../build/proyecto1/proyecto1.egg-info/SOURCES.txt'
+[12.981s] running build
+[12.981s] running build_py
+[13.026s] copying proyecto1/path_follow.py -> /home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/build/lib/proyecto1
+[13.026s] running install
+[13.039s] running install_lib
+[13.070s] copying /home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/build/lib/proyecto1/path_follow.py -> /home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1
+[13.121s] byte-compiling /home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1/path_follow.py to path_follow.cpython-312.pyc
+[13.145s] running install_data
+[13.163s] running install_egg_info
+[13.198s] removing '/home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1-0.0.0-py3.12.egg-info' (and everything under it)
+[13.226s] Copying ../../build/proyecto1/proyecto1.egg-info to /home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1-0.0.0-py3.12.egg-info
+[13.260s] running install_scripts
+[13.537s] Installing pathfollow script to /home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/proyecto1
+[13.537s] writing list of installed files to '/home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/install.log'
+[13.589s] Invoked command in '/home/server/Documents/Proyecto 1/proyecto_ws/src/proyecto1' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/server/Documents/Proyecto 1/proyecto_ws/install/proyecto1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/proyecto1 build --build-base /home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/build install --record /home/server/Documents/Proyecto 1/proyecto_ws/build/proyecto1/install.log --single-version-externally-managed install_data
