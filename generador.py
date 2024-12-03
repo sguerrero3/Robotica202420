@@ -72,8 +72,6 @@ def wavefront_pathfind(escenario, opcion):
 
     grid = generar_grid(escenario)
 
-    grid_original = np.copy(grid)
-
     width, height = escenario['dimensiones']
     width = int(width * 2) 
     height = int(height * 2) 
@@ -123,18 +121,12 @@ def wavefront_pathfind(escenario, opcion):
             current = next_cell
         else:
             raise ValueError("No path found")
-        
-    
-        
-    grid_original[q0] = -2
 
 
     for i,value in enumerate(path):
         y = (value[0]/height)*(height/2) + 0.25
         x = (value[1]/width)*(width/2) + 0.25
         path[i] = (y,x)
-
-    visualize_grid(grid_original, escenario, path)
 
     return path
 
@@ -175,7 +167,17 @@ def generar_grid(escenario):
     return grid
 
 
-def visualize_grid(grid, escenario, path):
+def visualize_grid(escenario, path):
+
+    path = [(y, x) for (x, y, z) in path]
+
+    q0 = escenario['q0']
+    x = int(np.ceil(q0[0] * 2)) -1
+    y = int(np.ceil(q0[1] * 2)) -1
+    q0 = (y,x)
+
+    grid = generar_grid(escenario)
+    grid[q0] = -2
 
     x_max, y_max = escenario['dimensiones']
 
@@ -186,13 +188,13 @@ def visualize_grid(grid, escenario, path):
     # Create a figure for visualization
     plt.figure()
 
-    plt.plot(q0[0], q0[1], 'go', label="Start (q0)")  # Start point in green
-    plt.plot(qf[0], qf[1], 'ro', label="End (qf)") 
+    plt.plot(q0[0], q0[1], 'ro', label="End (qf)")  # Start point in green
+    plt.plot(qf[0], qf[1], 'go', label="Start (q0)") 
 
     plt.xlim(0, x_max)
     plt.ylim(0, y_max)
 
-    cmap = ListedColormap(['green', 'black', 'white', 'red'])
+    cmap = ListedColormap(['red', 'black', 'white', 'green'])
 
     # Display the grid using a color map
     plt.imshow(grid, cmap=cmap, origin='lower', extent=[0, x_max, 0, y_max], vmin=-2, vmax=1)
@@ -252,6 +254,8 @@ def format_path(path, escenario):
 
     formatted_path.append(escenario['qf'])
 
+    visualize_grid(escenario, formatted_path)
+
     return formatted_path
 
 def export_path(formatted_path, file_name):
@@ -264,7 +268,7 @@ def export_path(formatted_path, file_name):
 
 
 
-for num in range(1,2):
+for num in range(1,7):
 
     escenario = read_scenario(f"./Escenas-txt/Escena-Problema{num}.txt")
     path1 = wavefront_pathfind(escenario, False)
