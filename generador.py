@@ -128,6 +128,13 @@ def wavefront_pathfind(escenario, opcion):
         x = (value[1]/width)*(width/2) + 0.25
         path[i] = (y,x)
 
+    if opcion:
+        f = escenario['qf']
+        o = escenario['q0']
+
+        escenario['qf'] = o
+        escenario['q0'] = f
+
     return path
 
 
@@ -188,13 +195,13 @@ def visualize_grid(escenario, path):
     # Create a figure for visualization
     plt.figure()
 
-    plt.plot(q0[0], q0[1], 'ro', label="End (qf)")  # Start point in green
-    plt.plot(qf[0], qf[1], 'go', label="Start (q0)") 
+    plt.plot(q0[0], q0[1], 'go', label="Start (q0)")  # Start point in green
+    plt.plot(qf[0], qf[1], 'ro', label="End (qf)") 
 
     plt.xlim(0, x_max)
     plt.ylim(0, y_max)
 
-    cmap = ListedColormap(['red', 'black', 'white', 'green'])
+    cmap = ListedColormap(['green', 'black', 'white', 'red'])
 
     # Display the grid using a color map
     plt.imshow(grid, cmap=cmap, origin='lower', extent=[0, x_max, 0, y_max], vmin=-2, vmax=1)
@@ -240,9 +247,9 @@ def format_path(path, escenario):
 
 
         if i == 0:
-            angle_degrees = escenario['qf'][2]
-        elif i == int(len(path)/2):
             angle_degrees = escenario['q0'][2]
+        elif i == int(len(path)/2):
+            angle_degrees = escenario['qf'][2]
         else:
             angle_radians = np.arccos(dot_product / (magnitude1 * magnitude2))
             angle_degrees = np.degrees(angle_radians)
@@ -252,7 +259,7 @@ def format_path(path, escenario):
 
         formatted_path.append((x,y,float(angle_degrees)))
 
-    formatted_path.append(escenario['qf'])
+    formatted_path.append(escenario['q0'])
 
     visualize_grid(escenario, formatted_path)
 
