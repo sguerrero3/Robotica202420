@@ -60,9 +60,15 @@ def read_scenario(file_path):
     return escenario
 
 
-def wavefront_pathfind(escenario):
+def wavefront_pathfind(escenario, opcion):
 
-    
+
+    if opcion:
+        f = escenario['qf']
+        o = escenario['q0']
+
+        escenario['qf'] = o
+        escenario['q0'] = f
 
     grid = generar_grid(escenario)
 
@@ -191,7 +197,7 @@ def visualize_grid(grid, escenario, path):
     # Display the grid using a color map
     plt.imshow(grid, cmap=cmap, origin='lower', extent=[0, x_max, 0, y_max], vmin=-2, vmax=1)
 
-    # Set the title and axis labels
+    # Set the title and axis labelsgrid
     plt.title("Grid Visualization with Obstacles")
     plt.xlabel("X Axis")
     plt.ylabel("Y Axis")
@@ -204,45 +210,6 @@ def visualize_grid(grid, escenario, path):
 
     y, x = zip(*path)
     plt.plot(x,y)
-
-
-
-def visualizar_escenario(scenario):
-    # Create plot without subplot
-    plt.figure()
-    
-    # Set plot dimensions
-    width, height = scenario["dimensiones"]
-    plt.xlim(0, width)
-    plt.ylim(0, height)
-    
-    # Plot start and end points
-    q0 = scenario["q0"]
-    qf = scenario["qf"]
-    plt.plot(q0[0], q0[1], 'go', label="Start (q0)")  # Start point in green
-    plt.plot(qf[0], qf[1], 'ro', label="End (qf)")    # End point in red
-    
-    # Plot obstacles as rectangles
-    for ((x1, y1), (x2, y2)) in scenario["obstaculos"]:
-        # Calculate rectangle width and height
-        rect_width = abs(x2 - x1)
-        rect_height = abs(y2 - y1)
-        bottom_left_x = min(x1, x2)
-        bottom_left_y = min(y1, y2)
-        
-        # Create a rectangle patch and add it to the plot
-        rect = patches.Rectangle((bottom_left_x, bottom_left_y), rect_width, rect_height, linewidth=1, edgecolor='black', facecolor='black', alpha=0.5)
-        plt.gca().add_patch(rect)
-    
-    # Add labels and legend
-    plt.xlabel("X Coordinate")
-    plt.ylabel("Y Coordinate")
-    plt.title("Robot Path Planning Scenario")
-    plt.legend()
-
-    plt.grid(which='both', color='gray', linestyle='--', linewidth=0.5)
-    plt.xticks(np.arange(0, width + 0.5, 0.5))
-    plt.yticks(np.arange(0, height + 0.5, 0.5))
     
 
 def format_path(path, escenario):
@@ -267,11 +234,19 @@ def format_path(path, escenario):
         magnitude1 = np.linalg.norm(vector1)
         magnitude2 = np.linalg.norm(vector2)
 
-        angle_degrees = escenario['q0'][2]
+        cross_product = vector1[0] * vector2[1] - vector1[1] * vector2[0]
 
-        if i != 0:
+
+        if i == 0:
+            angle_degrees = escenario['qf'][2]
+        elif i == int(len(path)/2):
+            angle_degrees = escenario['q0'][2]
+        else:
             angle_radians = np.arccos(dot_product / (magnitude1 * magnitude2))
             angle_degrees = np.degrees(angle_radians)
+
+            if cross_product<0:
+                angle_degrees = 360 - angle_degrees
 
         formatted_path.append((x,y,float(angle_degrees)))
 
@@ -281,7 +256,6 @@ def format_path(path, escenario):
 
 def export_path(formatted_path, file_name):
 
-
     with open(file_name, "w") as file:
 
         for tup in formatted_path:
@@ -290,10 +264,12 @@ def export_path(formatted_path, file_name):
 
 
 
-for num in range(1,7):
+for num in range(1,2):
 
     escenario = read_scenario(f"./Escenas-txt/Escena-Problema{num}.txt")
-    path = wavefront_pathfind(escenario)
+    path1 = wavefront_pathfind(escenario, False)
+    path2 = wavefront_pathfind(escenario, True)
+    path = path1 + path2
     formatted_path = format_path(path, escenario)
     export_path(formatted_path, f"./Paths-txt/Escena-Path{num}.txt")
 
