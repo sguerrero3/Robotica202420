@@ -82,7 +82,19 @@ class PathFollow(Node):
         elif not self.reached_target(target_x, target_y, target_theta_deg):
             self.move_straight()
         else:
-            # Proceed to the next waypoint or complete the path
+            #Relocalizar
+            if (self.current_index + 1 == int(len(self.path))/2):
+                
+                time.sleep(2)
+
+                q = self.path[self.current_index + 1]
+
+                print(f"qf = {q[0]},{q[1]},{q[2]}")
+                print(f"qf-est = {round(self.x, 4)},{round(self.y,4)},{round(math.degrees(self.yaw),4)}")
+
+                self.calculate_real()
+
+
             self.get_logger().info(f"Reached waypoint {self.current_index + 1}/{len(self.path)}")
             self.current_index += 1
             if self.current_index >= len(self.path):
@@ -125,12 +137,11 @@ class PathFollow(Node):
 
         time.sleep(2)
 
-        qf = self.path[len(self.path)-1]
+        q = self.path[len(self.path)-1]
 
-        print(f"qf = {qf[0]},{qf[1]},{qf[2]}")
-        print(f"qf-est = {round(self.x, 4)},{round(self.y,4)},{round(math.degrees(self.yaw),4)}")
+        print(f"q0 = {q[0]},{q[1]},{q[2]}")
+        print(f"q0-est = {round(self.x, 4)},{round(self.y,4)},{round(math.degrees(self.yaw),4)}")
 
-        self.calculate_real()
 
     def calculate_real(self):
 
