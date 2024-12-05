@@ -1,0 +1,24 @@
+[0.747s] Invoking command in '/home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/src/proyecto1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/build/proyecto1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/install/proyecto1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/proyecto1 build --build-base /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/build/proyecto1/build install --record /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/build/proyecto1/install.log --single-version-externally-managed install_data
+[0.963s] running egg_info
+[0.980s] writing ../../build/proyecto1/proyecto1.egg-info/PKG-INFO
+[0.980s] writing dependency_links to ../../build/proyecto1/proyecto1.egg-info/dependency_links.txt
+[0.980s] writing entry points to ../../build/proyecto1/proyecto1.egg-info/entry_points.txt
+[0.980s] writing requirements to ../../build/proyecto1/proyecto1.egg-info/requires.txt
+[0.980s] writing top-level names to ../../build/proyecto1/proyecto1.egg-info/top_level.txt
+[1.015s] reading manifest file '../../build/proyecto1/proyecto1.egg-info/SOURCES.txt'
+[1.016s] writing manifest file '../../build/proyecto1/proyecto1.egg-info/SOURCES.txt'
+[1.016s] running build
+[1.016s] running build_py
+[1.016s] copying proyecto1/path_follow.py -> /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/build/proyecto1/build/lib/proyecto1
+[1.016s] running install
+[1.022s] running install_lib
+[1.039s] copying /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/build/proyecto1/build/lib/proyecto1/path_follow.py -> /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1
+[1.039s] byte-compiling /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1/path_follow.py to path_follow.cpython-312.pyc
+[1.041s] running install_data
+[1.041s] running install_egg_info
+[1.058s] removing '/home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1-0.0.0-py3.12.egg-info' (and everything under it)
+[1.058s] Copying ../../build/proyecto1/proyecto1.egg-info to /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/install/proyecto1/lib/python3.12/site-packages/proyecto1-0.0.0-py3.12.egg-info
+[1.059s] running install_scripts
+[1.169s] Installing pathfollow script to /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/install/proyecto1/lib/proyecto1
+[1.169s] writing list of installed files to '/home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/build/proyecto1/install.log'
+[1.186s] Invoked command in '/home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/src/proyecto1' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/build/proyecto1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/install/proyecto1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/proyecto1 build --build-base /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/build/proyecto1/build install --record /home/sebastian/Documents/Robotica/Robotica202420/proyecto_ws/build/proyecto1/install.log --single-version-externally-managed install_data

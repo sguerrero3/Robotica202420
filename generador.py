@@ -248,7 +248,7 @@ def format_path(path, escenario):
 
         if i == 0:
             angle_degrees = escenario['q0'][2]
-        elif i == int(len(path)/2):
+        elif path[i] == path[i-1]:
             angle_degrees = escenario['qf'][2]
         else:
             angle_radians = np.arccos(dot_product / (magnitude1 * magnitude2))

@@ -83,16 +83,20 @@ class PathFollow(Node):
             self.move_straight()
         else:
             #Relocalizar
-            if (self.current_index + 1 == int(len(self.path))/2):
-                
-                time.sleep(2)
+            if self.current_index>0:
 
-                q = self.path[self.current_index + 1]
+                if (self.path[self.current_index][0] == self.path[self.current_index-1][0] and self.path[self.current_index][1] == self.path[self.current_index-1][1]) and self.current_index + 1 < len(self.path):
 
-                print(f"qf = {q[0]},{q[1]},{q[2]}")
-                print(f"qf-est = {round(self.x, 4)},{round(self.y,4)},{round(math.degrees(self.yaw),4)}")
+                    self.stop_new()
 
-                self.calculate_real()
+                    time.sleep(2)
+
+                    q = self.path[self.current_index + 1]
+
+                    print(f"qf = {q[0]},{q[1]},{q[2]}")
+                    print(f"qf-est = {round(self.x, 4)},{round(self.y,4)},{round(math.degrees(self.yaw),4)}")
+
+                    self.calculate_real()
 
 
             self.get_logger().info(f"Reached waypoint {self.current_index + 1}/{len(self.path)}")
@@ -102,21 +106,26 @@ class PathFollow(Node):
 
     def is_oriented(self, target_theta):
         yaw_diff = abs(target_theta - self.yaw)
-        return yaw_diff < 0.05  # Adjust tolerance as needed
+        return yaw_diff < 0.08  # Adjust tolerance as needed
 
     def rotate_towards(self, target_theta):
         msg = Twist()
         msg.linear.x = 0.0
-        msg.angular.z = 0.2 if (target_theta - self.yaw) > 0 else -0.2
+        msg.angular.z = 0.1 if (target_theta - self.yaw) > 0 else -0.1
         self.cmd_vel_publisher_.publish(msg)
 
     def reached_target(self, target_x, target_y, target_theta_deg):
         """
         Checks if the robot has reached the target position based on its orientation.
         """
-        if target_theta_deg == 90.0:  # Robot aligned vertically
+
+        if self.current_index>0 and (self.path[self.current_index][0] == self.path[self.current_index-1][0] and self.path[self.current_index][1] == self.path[self.current_index-1][1]):
+
+            return True
+
+        elif target_theta_deg == 90.0 or target_theta_deg == 270.0:  # Robot aligned vertically
             return abs(self.y - target_y) < 0.1
-        elif target_theta_deg == 0.0:  # Robot aligned horizontally
+        elif target_theta_deg == 0.0 or target_theta_deg == 180.0:  # Robot aligned horizontally
             return abs(self.x - target_x) < 0.1
         else:  # For other angles, check both x and y
             return abs(self.x - target_x) < 0.1 and abs(self.y - target_y) < 0.1
@@ -126,6 +135,14 @@ class PathFollow(Node):
         msg.linear.x = 0.2  # Forward speed
         msg.angular.z = 0.0
         self.cmd_vel_publisher_.publish(msg)
+
+
+    def stop_new(self):
+        msg = Twist()
+        msg.linear.x = 0.0
+        msg.angular.z = 0.0
+        self.cmd_vel_publisher_.publish(msg)
+
 
     def stop_robot(self):
         msg = Twist()
@@ -145,13 +162,13 @@ class PathFollow(Node):
 
     def calculate_real(self):
 
-        df_th = 0.6401
-        dd_th = 0.7500
+        df_th = 0.75316
+        dd_th = 0.70617 
 
         ef = self.d_frente - df_th
         er = self.d_derecha - dd_th
 
-        qf = self.path[len(self.path)-1]
+        qf = self.path[self.current_index]
 
         qf_act =  (qf[0] - er, qf[1] - ef)
 
