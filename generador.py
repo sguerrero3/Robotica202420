@@ -275,7 +275,9 @@ def export_path(formatted_path, file_name):
 
 
 
-for num in range(1,7):
+num = int(input("Numero de escena a correr: "))
+
+for num in range(num,num+1):
 
     escenario = read_scenario(f"./Escenas-txt/Escena-Problema{num}.txt")
     path1 = wavefront_pathfind(escenario, False)
