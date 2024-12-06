@@ -116,7 +116,7 @@ class PathFollow(Node):
         msg = Twist()
         msg.linear.x = 0.0
         msg.angular.z = 0.1 if (target_theta - self.yaw) > 0 else -0.1
-        self.cmd_vel_publisher_.publish(msg)
+        self.cmd_vel_publisher_.publish(msg) 
 
     def reached_target(self, target_x, target_y, target_theta_deg):
         """
@@ -170,7 +170,7 @@ class PathFollow(Node):
         res_path = f"../Results-txt/Escena-Path{self.num}.txt"
 
         with open(res_path, "w") as file:
-            file.write(res_path)
+            file.write(self.sol)
            
 
 
