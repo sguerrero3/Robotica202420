@@ -11,18 +11,17 @@ class PathFollow(Node):
     num = int(input("Numero de escena a correr: "))
     file_path = f"../Paths-txt/Escena-Path{num}.txt"
     path = []
-
+    
     with open(file_path) as file:
-
         lines = file.readlines()
-
         for line in lines:
-
             line = line.strip(",")
             elements = tuple(map(float, line.split(",")))
             path.append((elements))
 
     def __init__(self):
+        self.sol = ""
+
         super().__init__("pathFollow")
 
         self.pose_subscriber = self.create_subscription(PoseArray, "/world/pioneer3_world/pose/info", self.callback_sensor, 10)
@@ -96,6 +95,11 @@ class PathFollow(Node):
                     print(f"qf = {q[0]},{q[1]},{q[2]}")
                     print(f"qf-est = {round(self.x, 4)},{round(self.y,4)},{round(math.degrees(self.yaw),4)}")
 
+                    self.sol = self.sol + "*************QF*************\n"
+                    self.sol = self.sol + f"qf = {q[0]},{q[1]},{q[2]}\n"
+                    self.sol = self.sol + f"qf-est = {round(self.x, 4)},{round(self.y,4)},{round(math.degrees(self.yaw),4)}\n"
+
+
                     self.calculate_real()
 
 
@@ -156,8 +160,19 @@ class PathFollow(Node):
 
         q = self.path[len(self.path)-1]
 
+        self.sol = self.sol + "*************Q0*************\n"
+        self.sol = self.sol + f"q0 = {q[0]},{q[1]},{q[2]} \n"
+        self.sol = self.sol + f"q0-est = {round(self.x, 4)},{round(self.y,4)},{round(math.degrees(self.yaw),4)}"
+
         print(f"q0 = {q[0]},{q[1]},{q[2]}")
         print(f"q0-est = {round(self.x, 4)},{round(self.y,4)},{round(math.degrees(self.yaw),4)}")
+
+        res_path = f"../Results-txt/Escena-Path{self.num}.txt"
+
+        with open(res_path, "w") as file:
+            file.write(res_path)
+           
+
 
 
     def calculate_real(self):
@@ -175,6 +190,8 @@ class PathFollow(Node):
         angle = 90.0
 
         print(f"qf-act = {round(qf_act[0],4)}, {round(qf_act[1], 4)}, {round(angle,4)}")
+
+        self.sol = self.sol + f"qf-act = {round(qf_act[0],4)}, {round(qf_act[1], 4)}, {round(angle,4)} \n\n"
 
 
 def main(args=None):
